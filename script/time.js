@@ -7,5 +7,5 @@ let year = d.getFullYear();
 let month=monthNames[d.getMonth()];
 let day = dayNames[d.getDay()];
 let date = d.getDate();
-const x = (`${day}, ${month} ${date}, ${year}`)
+const x = (`${day}  ${month}  ${date}  ${year}`)
 time.innerText=x;
