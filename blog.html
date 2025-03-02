@@ -26,20 +26,32 @@
     <section>
         <h1 class="text-2xl font-bold text-center m-6">Blogs</h1>
         <div class="bg-[#ffffff] mx-4 mt-4 px-4">
-            <h1 class="text-xl font-bold p-5 pt-8">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <h1 class="text-xl font-bold p-5 pt-6">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <div class="border-t-2 border-dotted border-blue-200 w-full my-4 pt-1"></div>
             <p class="text-lg px-5  pb-8 ">Answer-1: <br> document.getElementById("id")-Select the ID<br>document.getElementsByClassName("class")-Selects elements by class<br>document.getElementsByTagName("tag") -Selects elements by tag<br>document.querySelector("selector")-Selects the first mapping element<br>document.querySelectorAll("selector")-Selects  all mapping elements</p>
         </div>
         <div class="bg-[#ffffff] mx-4 mt-4 px-4">
-            <h1 class="text-xl font-bold p-5 pt-8">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <h1 class="text-xl font-bold p-5 pt-6">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <div class="border-t-2 border-dotted border-blue-200 w-full my-4"></div>
             <p class="text-lg px-5  pb-8 ">Answer-2: <br> <span class="font-bold">innerHTML</span> - Returns or sets the HTML content inside an element.Gets/sets HTML + text.<br> <span class="font-bold">innerText</span> - Returns or sets only the visible text of an element,ignoring hidden content.It dose not parse HTML
                 <br> <span class="font-bold">textContent</span> - Retrieves  or sets all text,including hidden content,without formatting .It is faster than innerText as it dose not consider CSS styling</p>
         </div>
         <div class="bg-[#ffffff] mx-4 mt-4 px-4">
-            <h1 class="text-xl font-bold p-5 pt-8">Question-3: What is event delegation in the DOM?</h1>
-            <p class="text-lg px-5  pb-8 ">Answer-3:Event delegation is a technique where you add an event listener to a parent element instead of multiple child elements.The event bubbles up from the child to the parent,allowing the parent to handle it.</p>
+            <h1 class="text-xl font-bold p-5 pt-6">Question-3: What is event delegation in the DOM?</h1>
+            <div class="border-t-2 border-dotted border-blue-200 w-full my-4"></div>
+            <p class="text-lg px-5  pb-8 ">Answer-3:Event delegation is a technique where you add an event listener to a parent element instead of multiple child elements.The event bubbles up from the child to the parent,allowing the parent to handle it.<br>
+                <span class="font-bold">Example</span>
+                <br>
+                document.getElementById('parent').addEventListener('click',(e)=>{<br>
+                    if(e.target.classList.contains("childs")){<br>
+                        console.log("Child clicked")
+                    }
+                })
+            </p>
         </div>
         <div class="bg-[#ffffff] mx-4 mt-4 px-4">
-            <h1 class="text-xl font-bold p-5 pt-8">Question-4: What is event bubbling in the DOM?</h1>
+            <h1 class="text-xl font-bold p-5 pt-6">Question-4: What is event bubbling in the DOM?</h1>
+            <div class="border-t-2 border-dotted border-blue-200 w-full my-4"></div>
             <p class="text-lg px-5  pb-8 ">Answer-4:Event bubbleing is when an event starts from the target element and moves through its parent elements in the DOM
               <br>
               document.getElementById("child").addEventListener("click",()=>{
@@ -56,7 +68,8 @@
             </p>
         </div>
         <div class="bg-[#ffffff] mx-4 mt-4 px-4">
-            <h1 class="text-xl font-bold p-5 pt-8">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <h1 class="text-xl font-bold p-5 pt-6">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <div class="border-t-2 border-dotted border-blue-200 w-full my-4"></div>
             <p class="text-lg px-5  pb-8 ">Answer-5:Event bubbleing is when an event starts from the target element and moves through its parent elements in the DOM<br>
                 <span class="font-bold"> Create and Add</span>
                 <br> let div = document.createElement("div");<br>
