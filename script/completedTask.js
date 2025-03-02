@@ -18,7 +18,7 @@ function addClick(id,y){
       const activities = document.getElementById("activities");
       const x = getHeading(y);
         const p = document.createElement("p");
-        p.innerText = `You have Complete The Task ${x}`
+        p.innerText = `You have Complete The Task ${x} ${new Date().toLocaleTimeString()}`
         activities.appendChild(p)
         p.style.backgroundColor = "#F4F7FF";
         p.style.padding="6px";

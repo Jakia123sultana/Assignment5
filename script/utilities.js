@@ -23,3 +23,11 @@ function getHeading(id){
     const value = document.getElementById(id).innerText;
     return value;
 }
+
+function getTime(){
+    const d = new Date();
+    let hour = d.getHours();
+    let y=d.getMinutes();
+    let z = d.getSeconds();
+     return ` ${hour}:${y}:${z}`
+}
